@@ -1,0 +1,69 @@
+
+1 - O $ no começo de um script em javascript indica que que o algoritmo esta usando a biblioteca jquery. A expressão em jQuery
+    $(document).ready(); significa "quando este documento - a página web - estiver totalmente carregado. E dentro do parenteses
+    depois do ready a ação a ser realizada depois de toda a página ser carregada é executada;
+
+2 - O 'mouseover' é usado para aplicar ações ao componente especificando quando o cursor do mouse passar por ele. Já o 'mouseout'
+    é usado para aplicar uma ação quando cursor sair do componete. O script lá apresentado também ser feito da seguinte forma:
+
+        $(document).ready(function(){
+                $("#logo").on("mouseover", function(){
+                    $("#banner h1").css({"color":"red", "font-size":"12em", "transition":"1s"});
+                }).on("mouseout", function(){
+                    $("#banner h1").css({"color":"#fff", "font-size":"92px", "transition":"none"});
+                });
+            });
+
+3 - Essa ação é realiza quando o elemento especificado estiver em foco quando se usa o 'focus', enquanto que com 'blur' a ação
+    realizada quando o elemento perde o foco;
+
+4 - A regra 'transition-timing-function' dá um efeito de aceleração. A função 'cubic-bezier' controla a velocidade, onde o primeiro
+    parâmetro é ponto inicial, o segundo a velocidade inicial, o terceiro a velocidae final e quarto é o ponto final;
+
+5 - A linha de comando '$(function(){});' é a forma abreviada de escrever '$(document).ready(function(){});' no jQuery;
+
+6 - A expressão $(this) refencia o próprio elemento que está sendo trabalhado; 
+
+7 - Existem diversos eventos para se aplicar uma ação:
+    - mouseover = quando cursor passa encima do elemento;
+    - mouseout = quando o cursor sai do elemento;
+    - mousemove = quando cursor está movendo o elemento;
+    - click = quando o elemnto é clicado pelo mouse;
+    - change = o evento ocorre depois que o elemnto sofre uma modificação;
+    - each = o evento ocorre toda vez que o elemento especificado for encontrado;
+
+8 - O método toggleClass permite que o elemnto troque de classe CSS na ocorrência de um evento. Já o hasClass identifica a classe
+    do elemento especificado;
+
+9 - Eis aqui um típico uso de angular para exibição de dados em tags HTML:
+
+    angular.module("shop", []).controller("destaque-controller", function($scope){
+        $scope.produtos = [];
+        $scope.produtos.push({
+            nome_prod_longo: "Smartphone Motorola Moto X PLay Dual Chip Desbloqueado Android 5.1",
+            foto_principal: "moto-x.png",
+            preco: "1.259",
+            centavos: "10",
+            parcelas: 8,
+            parcela: "174,88",
+            total: "1.399,00"
+        });
+        
+        $scope.produtos.push({
+            nome_prod_longo: "iPhone",
+            foto_principal: "moto-x.png",
+            preco: "1.259",
+            centavos: "10",
+            parcelas: 8,
+            parcela: "174,88",
+            total: "1.399,00"
+        });
+    });
+
+10 - O plugin do carousel deve ser acionado depois que os dados estiverem renderizados na tela, por isso, a variável que
+     o invoca deve ser chamada depois que ocorrer a solicitação AJax da API que trás os dados a serem renderizados;
+
+11 - Solicitação Ajax que consumirá a API desenvolvida no framework SLIM;
+
+12 - Há pequeno delay(espera ociosa) no angular para pegar os dados renderizados e inserí-los nas tags HTML. A função setTimeout
+     congela o javascript por um tempo para depois executar uma rotina;

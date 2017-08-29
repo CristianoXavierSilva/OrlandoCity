@@ -1,0 +1,466 @@
+/* 
+    Created on : 16/08/2017, 13:01:13
+    Author     : Cristiano
+*/
+
+@font-face{
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-size: 1em;
+}
+
+@font-face{
+    font-family: 'OpenSans-Light';
+    src: url("../fonts/OpenSans-Light.ttf");
+    font-size: 1em;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(94, 41, 194, .9);
+    position: relative;
+    z-index: 2;
+}
+
+header .container {
+    position: relative;
+}
+
+header .header-black {
+    background-color: #000;
+    height: 40px;
+}
+
+header .header-black li {
+    background-image: url("../../uploads/images/clubs.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 4px 4px;
+}
+
+header .header-black li.club-01{
+    background-position: 0px 0px;
+}
+
+header .header-black li.club-02{
+    background-position: -48px 0px;
+}
+
+header .header-black li.club-03{
+    background-position: -95px 0px;
+}
+
+header .header-black li.club-04{
+    background-position: -140px 0px;
+}
+
+header .header-black li.club-05{
+    background-position: -190px 0px;
+}
+
+header .header-black li.club-06{
+    background-position: -240px 0px;
+}
+
+header .header-black li.club-07{
+    background-position: -289px 0px;
+}
+
+header .header-black li.club-08{
+    background-position: -334px 0px;
+}
+
+header .header-black li.club-09{
+    background-position: -380px 0px;
+}
+
+header .header-black li.club-10{
+    background-position: -430px 0px;
+}
+
+header .header-black li.club-11{
+    background-position: -480px 0px;
+}
+
+header .header-black li.club-12{
+    background-position: -529px 0px;
+}
+
+header .header-black li.club-13{
+    background-position: -579px 0px;
+}
+
+header .header-black li.club-14{
+    background-position: -629px 0px;
+}
+
+header .header-black li.club-15{
+    background-position: -674px 0px;
+}
+
+header .header-black li.club-16{
+    background-position: -720px 0px;
+}
+
+header .header-black li.club-17{
+    background-position: -763px 0px;
+}
+
+header .header-black li.club-18{
+    background-position: -807px 0px;
+}
+
+header .header-black li.club-19{
+    background-position: -856px 0px;
+}
+
+header .header-black li.club-20{
+    background-position: -901px 0px;
+}
+
+header .header-black li.club-21{
+    background-position: -948px 0px;
+}
+
+header .header-black li.club-22{
+    background-position: -994px 0px;
+}
+
+header .header-black li a {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+header #logo{
+    position: absolute;
+    top: 20px;
+    z-index: 3;
+}
+
+#menu {
+    margin: 12px 0;
+}
+
+#menu li {
+    display:  inline-block;
+    font-family: "OpenSans";
+}
+
+#menu li.search {
+    width: 182px;
+}
+
+#menu li.search input{
+    background-color: #5C2D90;
+    color: #fff;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+}
+
+#menu li.search ::-webkit-input-placeholder {
+    color: #fff;
+}
+
+#menu li.search button {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 3px;
+    top: 7px;
+}
+
+#menu li.search button i {
+    font-size: 14px;
+    color: rgba(255, 255, 255, .5);
+}
+
+#menu li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+#menu li.search .input-group {
+    top: 8px;
+}
+
+#banner {
+    width: 100%;
+    height: 728px;
+    position: relative;
+    background: url("../../uploads/banners/banner.jpg") no-repeat;
+    background-position-y: -100px;
+    background-size: cover;
+    top: -129px;
+}
+
+#banner h1 {
+    position: relative;
+    color: #fff;
+    top: 300px;
+    font-family: "OpenSans-Light";
+    font-size:  92px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
+    margin-left: 50px;
+}
+
+#banner h1 small {
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-size: 32px;
+    display: block;
+    color: #fff;
+}
+
+#news {
+    position: relative;
+    top: -110px;
+}
+
+#news h2 {
+    font-family: "OpenSans-Light";
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5E2799;
+}
+
+#news hr {
+    border: #FDE192 solid 2px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#news .thumbnails {
+    margin-top: 60px;
+}
+
+#news .thumbnails h3 {
+    font-family: "OpenSans";
+    font-size: 18px;
+    font-weight: bold;
+    color: #5E299A;
+    margin-bottom: 0;
+}
+
+#news .thumbnails time {
+    font-family: "OpenSans";
+    font-size: 18px;
+    color: #A7A7A7;
+}
+
+#estatisticas {
+    width: 100%;
+    height: 200px;
+    background-color: #5E299A;
+    text-align: center;
+}
+
+#estatisticas p {
+    font-family: "OpenSans-Light";
+    font-size: 64px;
+    color: #FDE092;
+    text-transform: uppercase;
+    margin-top: 36px;
+}
+
+#estatisticas p small {
+    font-family: "OpenSans-Light";
+    font-size: 24px;
+    color: #fff;
+    display: block;
+}
+
+#call-to-action {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#call-to-action h2 {
+    font-family: "OpenSans-Light";
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5E2799;
+}
+
+#call-to-action hr {
+    border: #FDE192 solid 2px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#call-to-action p {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #656565;
+}
+
+#call-to-action .btn {
+    min-width: 164px;
+    height: 44px;
+    line-height: 34px;
+    border-radius: 0;
+}
+
+#call-to-action .btn-roxo {
+    color: #fff;
+    background-color: #5E299A;
+    border-color: #5E299A;
+}
+
+#call-to-action .btn-amarelo {
+    color: #000;
+    background-color: #FDE192;
+    border-color: #FDE192;
+}
+
+#call-to-action .row-max-400 {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+footer {
+    margin-top: 110px;
+}
+
+footer .row {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+footer .row p {
+    line-height: 59px;
+    margin-bottom: 0;
+}
+
+footer .row-top {
+    height: 200px;
+    background-color: #171F26;
+}
+
+footer .row-down {
+    height: 60px;
+    background-color: #11171D;
+    border-top: #242D37 1px solid; 
+}
+
+footer .pull-left {
+    font-family: "OpenSans";
+    font-size: 14px;
+    color: #666666;
+}
+
+footer .row-down .text-roxo {
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-size: 14px;
+    color: #623291;
+}
+
+footer .row-down p {
+    margin: 0 auto;
+}
+
+footer #logo-rodape {
+    margin-top: 28px;
+}
+
+footer .col-popular-post,
+footer .col-links,
+footer .col-get-in-touch {
+    margin-top: 40px;
+}
+
+footer .col-popular-post h4,
+footer .col-links h4,
+footer .col-get-in-touch h4 {
+    font-family: "OpenSans";
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 17px;
+    border-bottom: #242D37 1px solid; 
+}
+
+footer .row-cols h5 {
+    font-family: Arial;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+footer .row-cols time {
+    font-family: Arial;
+    font-size: 14px;
+    color: #FDE092;
+    display: block;
+}
+
+footer .col-links a {
+    font-family: Arial;
+    font-size: 14px;
+    color: #fff;
+}
+
+footer .col-links .fa {
+    margin: 0 6px;
+}
+
+footer .col-get-in-touch address {
+    font-family: Arial;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+footer .col-get-in-touch address span {
+    display: inline-block;
+}
+
+footer .col-get-in-touch address i {
+    position: relative;
+    top: -14px;
+}
+
+footer .col-get-in-touch i {
+    font-size: 20px;
+    color: #9B9B9B;
+    margin: 0 6px;
+}
+
+footer .col-get-in-touch a {
+    color: #666;
+}
+
+footer .col-get-in-touch p {
+    line-height: 20px;
+}
+
+footer .list-socials {
+    margin-top:  4px;
+}
+
+footer .list-socials li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+footer .list-socials a {
+    display: block;
+    border: #9B9B9B solid 1px;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+}
+
+footer .list-socials i {
+    font-size: 16px;
+    margin: 6px auto;
+}

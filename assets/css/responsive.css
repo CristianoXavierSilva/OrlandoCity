@@ -1,0 +1,316 @@
+/* 
+    Created on : 18/08/2017, 09:26:51
+    Author     : Cristiano
+*/
+
+/* -- Tamanho padrão para tablets -- */
+@media only screen and (max-width: 768px){
+    .header-black ul {
+        display: none;
+    }
+}
+
+/* -- Tamanho padrão para smartphones -- */
+@media only screen and (max-width: 480px){
+    header .header-black {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+    }
+    
+    header #menu-mobile {
+        position: fixed;
+        width: 80%;
+        height: 100%;
+        top: 40px; 
+        left: -80%;
+        background-color: #fff;
+        transition: 1s;
+        z-index: 6;
+    }
+    
+    header #input-search-mobile {
+        transition: 1s;
+        top: -40px;
+        position: fixed;
+        color: #fff;
+        border: none;
+        width: 70%;
+        height: 40px;
+        left: 15%;
+        background-color: #000;
+        outline: none;
+    }
+    
+    header.open-search #input-search-mobile {
+        top: 0;
+    }
+    
+    header.open-search #logo {
+        z-index: 9;
+    }
+    
+    header.open-menu #menu-mobile {
+        left: 0;
+    }
+    
+    header.open-menu #menu-mobile-mask {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 5;
+    }
+    
+    header.open-menu #logo {
+        position: fixed;
+        height: 76px;
+        top: 50px;
+        left: calc(40% - 33px);
+        transform: rotate(360deg);
+    }
+    
+    header.open-menu #menu-mobile ul {
+        margin: 20px;
+        margin-top: 100px;
+    }
+    
+    header.open-menu #menu-mobile li {
+        text-align: center;
+        border-top: #ccc 1px solid;
+    }
+    
+    header.open-menu #menu-mobile li:last-child {
+        border-bottom: #ccc 1px solid;
+    }
+    
+    header.open-menu #menu-mobile li a {
+        font-family: 'OpenSans';
+        font-weight: bold;
+        font-size: 16px;
+        color: #633392;
+        padding: 18px;
+        display: block;
+    }
+    
+    header.open-menu .bar-close {
+        position: absolute;
+        width: 100%;
+        bottom: 40px;
+        background-color: #633392;
+        height: 40px;
+    }
+    
+    header.open-menu .btn-close {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 22px;
+    }
+    
+    .header-black ul, #menu {
+        display: none;
+    }
+    
+    header #logo {
+        left: 33%;
+        z-index: 10;
+        transition: 1s;
+    }
+    
+    #btn-bars, #btn-search {
+        position: absolute;
+        display: block;
+        outline: none;
+        background: none;
+        border: none;
+        font-size: 22px;
+        color: #fff;
+        top: 4px;
+    }
+    
+    #btn-bars {
+        left: 4px;
+    }
+    
+    #btn-search {
+        right: 4px;
+    }
+    
+    #banner {
+        height: 317px;
+        background-size: cover;
+        background-position: 0;
+        text-align: center;
+    }
+    
+    #banner h1 {
+        font-size: 48px;
+        top: 180px;
+        margin-left: 0;
+    }
+    
+    #banner h1 small {
+        font-size: 22px;
+    }
+    
+    #news h2 {
+        font-size: 32px;
+    }
+    
+    #news hr {
+        border-width: 4px; 
+    }
+    
+    .owl-carousel .owl-wrapper-outer {
+        margin-left: 15px;
+    }
+    
+    .thumbnails {
+        text-align: center;
+    }
+    
+    #news .thumbnails .item-inner img {
+        width: 80%;
+    }
+    
+    #btn-news-prev, #btn-news-next {
+        background: none;
+        border: none;
+        color:  #5E2799;
+        font-size: 48px;
+        display: block;
+        position: absolute;
+        top: 130px;
+        z-index: 1;
+        outline: none;
+    }
+    
+    #btn-news-next {     
+        right: 15px;
+    }
+    
+    #estatisticas {
+        height: inherit;
+    }
+    
+    #estatisticas p {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    #call-to-action {
+        margin-top: 69px;
+    }
+    
+    #call-to-action p {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    #call-to-action hr {
+        border-width: 4px;
+    }
+    
+    #call-to-action h2 {
+        font-size: 32px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #call-to-action .btn {
+        min-width: 138px;
+    }
+    
+    #call-to-action .btn-roxo {
+        float: left;
+    }
+    
+    #call-to-action .btn-amarelo {
+        float: right;
+    }
+    
+    #call-to-action .col-xs-6 {
+        padding: 0;
+    }
+    
+    .copyright-mobile p {
+        font-size: 10px;
+        line-height: 0;
+    }
+    
+    footer {
+        position: relative;
+        margin-top: 60px;
+    }
+    
+    footer .col-md-10 {
+        padding: 0;
+    }
+    
+    footer .row-top {
+        height: 157px;
+    }
+    
+    footer .row p {
+        text-align: center;
+        line-height: 20px;
+        margin-left: 10px;
+    }
+    
+    footer .row p:first-child {
+        margin-top: 10px;
+    }
+    
+    footer .row-down .text-roxo {
+        font-size: 10px;
+        margin-right: 13px;
+    }
+    
+    footer .list-socials {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50px;
+        text-align: center;
+    }
+    
+    footer .list-socials a {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    
+    footer .list-socials i {
+        font-size: 30px;
+        margin-top: 9px;
+    }
+    
+    footer .btn-footer {
+        width: 100%;
+        height: 44px;
+        line-height: 35px;
+        background-color: #11171D;
+    }
+    
+    footer .col-xs-6 {
+        padding: 0;
+        padding-right: 5px;
+    }
+    
+    footer .col-xs-6:last-child {
+        padding-right: 0;
+        padding-left: 5px;
+    }
+    
+    footer .visible-xs {
+        margin-top: -10px;
+    }
+    
+    footer .page-up {
+    display: inline-block !important;
+}
+}
